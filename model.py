@@ -5,7 +5,7 @@ def salvar_no_banco(texto):
     conn = sqlite3.connect('dados.db')
     c = conn.cursor()
     c.execute('CREATE TABLE IF NOT EXISTS notas (texo TEXT)')
-    C.execut('INSERT INTO notas VALUES(?) ', (texto))
+    c.execut('INSERT INTO notas VALUES(?) ', (texto))
     conn.commit()
     conn.close()
 
